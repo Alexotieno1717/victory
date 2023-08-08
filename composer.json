@@ -1,0 +1,15 @@
+{
+    "name": "alex/victory-farm",
+    "authors": [
+        {
+            "name": "Alexotieno1717",
+            "email": "alexotieno900@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/"
+        }
+    }
+}
