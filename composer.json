@@ -6,7 +6,10 @@
             "email": "alexotieno900@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-pdo": "*",
+      "ext-json": "*"
+    },
     "autoload": {
         "psr-4": {
             "Core\\": "Core/"

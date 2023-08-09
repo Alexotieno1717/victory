@@ -9,12 +9,12 @@ function dd($value)
     die();
 }
 
-function urlIs($value)
+function urlIs($value): bool
 {
     return $_SERVER['REQUEST_URI'] === $value;
 }
 
-function base_path($path)
+function base_path($path): string
 {
     return BASE_PATH . $path;
 }

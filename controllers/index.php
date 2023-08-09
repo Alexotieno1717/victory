@@ -7,11 +7,11 @@ use Core\Database;
 $config = require base_path('config.php');
 $db = new Database($config['database']);
 
-$data = $db->query("select * from branches")->get();
+$branches = $db->query("select * from branches ORDER BY id DESC")->get();
 
-//dd($data);
+//dd($branches);
 
 
 view('index.view.php', [
-    'data' => $data
+    'branches' => $branches
 ]);
