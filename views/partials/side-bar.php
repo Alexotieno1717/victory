@@ -9,7 +9,7 @@
                 href="/create"
                 class="<?= urlIs('/create') ? 'active' : '' ?> list-group-item list-group-item-action py-2 ripple"
             >
-                <i class="fas fa-chart-area fa-fw me-3"></i
+                <i class="fas fa-circle-plus fa-fw me-3"></i
                 ><span>Add Branches</span>
             </a>
 
@@ -17,7 +17,7 @@
                     href="/"
                     class="<?= urlIs('/') ? 'active' : '' ?> list-group-item list-group-item-action py-2 ripple"
             >
-                <i class="fas fa-chart-area fa-fw me-3"></i
+                <i class="fas fa-list fa-fw me-3"></i
                 ><span>Branches List</span>
             </a>
         </div>
