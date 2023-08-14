@@ -19,8 +19,8 @@
         </button>
 
         <!-- Brand -->
-        <a class="navbar-brand" href="#">
-            LOGO
+        <a class="navbar-brand text-success" href="#">
+            VICTORY FARM
         </a>
 
         <!-- Right links -->

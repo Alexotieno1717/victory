@@ -59,32 +59,43 @@
                          <p style="color: #DB504A"><?= $errors['contact'] ?></p>
                      <?php endif; ?>
 
+                     <!-- County input -->
+                     <div>
+                         <label class="form-outline mt-4">
+                             <select class="form-control custom-select"
+                                     name="county"
+                                     style="border: 1px solid lightgrey"
+                                     required
+                             >
+                                 <option selected disabled></option>
+                                 <?php
+                                 foreach ($counties as $county) : ?>
+                                     <option value="<?= $county['name'] ?>" required><?= $county['name'] ?></option>
+
+                                 <?php
+                                 endforeach; ?>
+                             </select>
+                         </label>
+                     </div>
+                     <?php if (isset($errors['county'])) : ?>
+                         <p style="color: #DB504A"><?= $errors['county'] ?></p>
+                     <?php endif; ?>
+
                     <!-- Sub-county input -->
                     <div class="form-outline mt-4">
                         <input type="text" name="sub_county"
                                id="form1Example1"
                                value="<?= $_POST['sub_county'] ?: '' ?>"
-                               class="form-control" />
+                               class="form-control"
+                               style="border: 1px solid lightgrey"
+                        />
                         <label class="form-label" for="form1Example1">Sub-county</label>
                     </div>
                      <?php if (isset($errors['sub_county'])) : ?>
                          <p style="color: #DB504A"><?= $errors['sub_county'] ?></p>
                      <?php endif; ?>
 
-                    <!-- County input -->
-                    <div>
-                        <label class="form-outline mt-4">
-                            <select class="form-control custom-select" name="county" style="border: 1px solid lightgrey" required>
-                                <option selected disabled></option>
-                                <?php
-                                foreach ($counties as $county) : ?>
-                                    <option value="<?= $county['name'] ?>" required><?= $county['name'] ?></option>
 
-                                    <?php
-                                endforeach; ?>
-                            </select>
-                        </label>
-                    </div>
                     <!-- Submit button -->
                     <button type="submit" class="btn btn-primary btn-block mt-4">Create a Branch</button>
 

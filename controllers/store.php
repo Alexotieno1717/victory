@@ -16,8 +16,12 @@ if (! Validator::string($_POST['contact'], 1, 15)) {
     $errors['contact'] = 'Cannot exceed a minimum of 15 characters.';
 }
 
-if (! Validator::string($_POST['sub_county'], 1, 255)) {
-    $errors['county'] = 'A minimum of 1 characters is required.';
+//if (! Validator::string($_POST['sub_county'], 0, 255)) {
+//    $errors['county'] = 'A minimum of 1 characters is required.';
+//}
+
+if (! Validator::string($_POST['county'], 1, 15)) {
+    $errors['county'] = 'Please select your county.';
 }
 
 // Calling the json data

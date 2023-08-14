@@ -1,0 +1,34 @@
+#custom_form_select_datatables{
+    width: 25%;
+    float: right;
+    padding: 16px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#custom_button_export{
+    background-color:#0c2f55;
+    border-color:#0c2f55;
+}
+
+.search{
+    width: 25%;
+    float: right;
+}
+
+.fixed-table-pagination{
+    display: flex;
+    justify-content: space-between;   
+}
+
+.pagination{
+    padding-top: 10px;
+    padding-left: 10%;
+}
+
+.page-pre > a,
+.page-number > a,
+.page-next > a,
+.page-last-separator > a{
+    color: black;
+}

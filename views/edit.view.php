@@ -79,14 +79,18 @@
                     <!-- County input -->
                     <div>
                         <label class="form-outline mt-4">
-                            <select class="form-control custom-select" name="county" style="border: 1px solid lightgrey" required>
+                            <select class="form-control custom-select"
+                                    name="county"
+                                    style="border: 1px solid lightgrey"
+                                    value="<?= $branch['county'] ?>"
+                                    required>
                                 <option selected disabled></option>
                                 <?php
                                 foreach ($counties as $county) : ?>
-                                    <option value="<?= $county['name'] ?>" required><?= $county['name'] ?></option>
-
-                                <?php
-                                endforeach; ?>
+                                    <option value="<?= $county['name'] ?>" <?= ($county['name'] === $branch['county']) ? 'selected' : '' ?>>
+                                        <?= $county['name'] ?>
+                                    </option>
+                                <?php endforeach; ?>
                             </select>
                         </label>
                     </div>

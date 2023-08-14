@@ -42,10 +42,19 @@ class Database
         $result = $this->find();
 
         if (! $result) {
-            abort();
+            $this->abort();
         }
 
         return $result;
+    }
+
+    private function abort()
+    {
+        http_response_code(404);
+
+        require base_path("views/404.php");
+
+        die();
     }
 
 }

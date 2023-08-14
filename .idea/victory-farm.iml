@@ -8,6 +8,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="boxicons" level="application" />
+    <orderEntry type="library" name="jquery.dataTables" level="application" />
     <orderEntry type="library" name="tailwindcss" level="application" />
+    <orderEntry type="library" name="jquery-3.5.1.slim" level="application" />
+    <orderEntry type="library" name="datatables" level="application" />
   </component>
 </module>
