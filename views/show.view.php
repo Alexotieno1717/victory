@@ -16,6 +16,7 @@
 <!--Main layout-->
 <main style="margin-top: 30px">
     <div class="container">
+        <a href="/" style="margin-left: 50px;">Go Back</a>
 
         <nav aria-label="breadcrumb" style="float: right; margin-right: 20px; font-size: small">
             <ol class="breadcrumb">
@@ -29,7 +30,7 @@
         <!--Section: Create Form -->
         <section>
 
-            <a href="/" class="pl-5 ml-5">Go Back</a>
+
             <div class="container col-md-11 pt-5">
                 <h3 class="pb-4">Single Branch</h3>
                 <div>
@@ -39,14 +40,19 @@
                     <p>Sub_county : <?= htmlspecialchars($branch['sub_county']) ?></p>
                 </div>
 
-                <div class="flex mt-3">
-                    <a href="branch/edit?id=<?= $branch['id'] ?>" class="btn btn-dark btn-sm mr-3">Edit Branch</a>
-<!--                    <a href="" class="btn btn-danger btn-sm">Delete</a>-->
-                    <form method="POST">
-                        <input type="hidden" name="_method" value="DELETE">
-                        <input type="hidden" name="id" value="<?= $branch['id'] ?>">
-                        <button class="btn btn-danger btn-sm">Delete Branch</button>
-                    </form>
+                <div class="d-flex mt-3">
+                    <div>
+                        <a href="branch/edit?id=<?= $branch['id'] ?>" class="btn btn-dark btn-sm mr-3">Edit Branch</a>
+                    </div>
+
+                    <div style="margin-left: 10px">
+                        <form method="POST" >
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="id" value="<?= $branch['id'] ?>">
+                            <button class="btn btn-danger btn-sm">Delete Branch</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
