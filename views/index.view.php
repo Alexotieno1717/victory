@@ -44,6 +44,7 @@
             <!--Section: Tables -->
             <section>
                 <div class="container">
+                    <a href="#">Download</a>
                     <table id="studtable" class="table table-striped table-bordered p-3" style="margin-top: 29px;">
                         <thead>
                             <tr>
@@ -76,7 +77,8 @@
                         </tbody>
                     </table>
                 </div>
-                <!--Section: Tables -->
+            </section>
+            <!--Section: Tables -->
         </div>
     </main>
 
@@ -89,7 +91,12 @@
     <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#studtable').DataTable();
+            $('#studtable').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
         });
     </script>
 
