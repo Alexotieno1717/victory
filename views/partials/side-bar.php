@@ -20,6 +20,13 @@
                 <i class="fas fa-list fa-fw me-3"></i
                 ><span>Branches List</span>
             </a>
+            <a
+                    href="/filter"
+                    class="<?= urlIs('/filter') ? 'active' : '' ?> list-group-item list-group-item-action py-2 ripple"
+            >
+                <i class="fas fa-list fa-fw me-3"></i
+                ><span>ussd</span>
+            </a>
         </div>
     </div>
 </nav>

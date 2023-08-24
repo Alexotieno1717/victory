@@ -29,7 +29,7 @@
 <main class="mt-5">
     <div class="container">
         <div style="margin: 29px;">
-            <h3 class="pt-4">Filter Page</h3>
+            <h3 class="pt-4">Ussd request Logs</h3>
         </div>
     </div>
 
